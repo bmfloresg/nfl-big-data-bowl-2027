@@ -1,0 +1,31 @@
+nfl-big-data-bowl-2027/
+
+├── README.md
+├── LICENSE
+├── .gitignore
+├── experiment_log.md
+│
+├── data/
+│   ├── raw/
+│   ├── interim/
+│   └── processed/
+│
+├── notebooks/
+│   ├── 01_data_audit.ipynb
+│   ├── 02_eda.ipynb
+│   └── 03_feature_engineering.ipynb
+│
+├── docs/
+│   ├── hypotheses.md
+│   ├── research_questions.md
+│   ├── feature_ideas.md
+│   └── findings.md
+│
+├── src/
+│   ├── data_loader.py
+│   ├── preprocessing.py
+│   └── metrics.py
+│
+└── outputs/
+    ├── figures/
+    └── models/
