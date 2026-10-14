@@ -49,7 +49,16 @@ entity_type == "PLAYER"
 
 Route Visualization
 
+
+
 Visualized a full WR route from:
 POST_CORNER_ROUTE_RIGHT
+
+
+Nunca habíamos comprobado que:
+time.diff()
+sea realmente: 0.1 segundos
+
+
 
 
