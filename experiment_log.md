@@ -58,3 +58,38 @@ Trajectory analysis must be performed exclusively on PLAYER records to avoid dis
 Action
 
 Filter entity_type == "PLAYER" before creating movement metrics.
+
+2026-10-14
+Milestone 02 completed.
+
+Created:
+
+WR_ROUTE_FEATURES_V1
+Scope:
+
+POST_CORNER_ROUTE_RIGHT
+
+Records:
+
+110 route attempts
+
+Validated Features:
+
+avg_speed
+max_speed
+avg_acceleration
+max_acceleration
+burst
+direction_change
+path_length
+straight_line
+path_efficiency
+route_duration
+Key Methodological Fixes:
+
+PLAYER-only filtering
+Circular direction calculations
+Geometric path reconstruction
+Outcome:
+
+First route-level feature dataset successfully generated.
