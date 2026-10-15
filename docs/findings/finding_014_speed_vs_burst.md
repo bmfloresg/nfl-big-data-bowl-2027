@@ -72,3 +72,24 @@ Cross-drill comparisons.
 NFL career outcomes.
 Status
 🟢 Active Research Direction  
+Finding 014
+Observation
+Initial acceleration ("burst") showed no meaningful relationship with NFL career outcomes.
+
+burst_mean ↔ career_games_started
+
+r = -0.02
+
+However
+Maximum speed demonstrated a stronger relationship:
+
+max_speed_mean ↔ career_games_started
+
+r = 0.31
+
+Interpretation
+Sustained speed may be more relevant than initial acceleration when evaluating WR prospects through combine tracking data.
+
+Status
+Promising
+
