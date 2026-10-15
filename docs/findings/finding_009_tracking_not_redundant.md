@@ -20,3 +20,16 @@ Tracking-derived movement metrics may contain information not captured by tradit
 
 Status
 Promising
+Finding 009
+Observation
+Route execution scores show very weak correlation with traditional athleticism metrics.
+
+Evidence
+CODE Score V3 vs NGS Athleticism
+
+Correlation:
+
+0.09
+
+Interpretation
+Route execution
