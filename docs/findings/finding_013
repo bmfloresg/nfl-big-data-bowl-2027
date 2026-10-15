@@ -1,0 +1,146 @@
+Finding 013
+Title
+CODE Score Relationships Are Not Stable Across Route Drills
+
+Date
+2026-10-14
+
+Context
+During Milestone 03, the objective shifted from feature engineering to validation.
+
+The initial analysis focused on the drill:
+
+POST_CORNER_ROUTE_RIGHT
+where tracking-derived metrics showed a modest positive relationship with NFL career outcomes.
+
+To evaluate whether this relationship generalized beyond a single drill, the complete feature-engineering pipeline was replicated on a second route:
+
+COMEBACK_ROUTE_RIGHT
+The methodology, feature definitions, aggregation process, and validation approach remained unchanged.
+
+Route Datasets
+POST_CORNER_ROUTE_RIGHT
+110 route attempts
+95 players
+COMEBACK_ROUTE_RIGHT
+109 route attempts
+97 players
+Both drills had comparable sample sizes and therefore provide a useful cross-drill validation framework.
+
+Metric Evaluated
+Experimental metric:
+
+CODE Score V3
+Defined as:
+
+direction_change_z +
+path_efficiency_z
+The score was designed to reward route attempts that simultaneously exhibited:
+
+substantial directional change
+efficient route geometry
+The metric remains experimental and had not yet been validated against NFL outcomes.
+
+Results
+POST_CORNER_ROUTE_RIGHT
+Relationship with NFL career outcomes:
+
+CODE ↔ career_games_started
+
+r ≈ +0.26
+CODE ↔ career_offensive_snaps
+
+r ≈ +0.24
+Initial interpretation:
+
+Higher CODE scores appeared weakly associated with greater NFL usage.
+
+COMEBACK_ROUTE_RIGHT
+Relationship with NFL career outcomes:
+
+CODE ↔ career_games_started
+
+r ≈ -0.29
+CODE ↔ career_offensive_snaps
+
+r ≈ -0.31
+Interpretation:
+
+The direction of the relationship reversed.
+
+Players with higher CODE scores in this drill were associated with fewer career starts and fewer offensive snaps.
+
+Key Observation
+The relationship observed in POST_CORNER_ROUTE_RIGHT did not replicate in COMEBACK_ROUTE_RIGHT.
+
+Not only did the magnitude change, but the sign of the relationship changed as well:
+
+Positive → Negative
+This is a stronger result than simply observing weaker correlations.
+
+The finding suggests that route-dependent effects may be present.
+
+Possible Explanations
+Hypothesis A
+CODE Score V3 is not a robust metric.
+
+The initial positive relationship observed in POST_CORNER_ROUTE_RIGHT may have been driven by noise or drill-specific characteristics.
+
+Hypothesis B
+Different route drills measure fundamentally different athletic skills.
+
+POST_CORNER_ROUTE_RIGHT emphasizes:
+
+acceleration
+route manipulation
+spatial control
+multi-stage directional transitions
+COMEBACK_ROUTE_RIGHT emphasizes:
+
+deceleration
+braking ability
+transition efficiency
+change of momentum
+The same tracking metric may therefore represent different underlying behaviors depending on the route context.
+
+Hypothesis C
+A universal route-execution score may not exist.
+
+Different route families may require separate scoring frameworks.
+
+In this interpretation:
+
+Route Execution
+would not be a single dimension but a collection of route-specific skills.
+
+Implications
+This finding challenges the assumption that a single composite tracking score can be applied uniformly across route types.
+
+Future work should prioritize:
+
+Route-specific analysis.
+Validation across multiple drills.
+Decomposition into interpretable dimensions.
+Evaluation of Burst, Agility, and Efficiency separately.
+Lessons Learned
+The objective of validation is not to confirm hypotheses but to test them.
+
+Although the result did not support the original expectation, it produced useful evidence:
+
+The predictive behavior of tracking-derived metrics appears to depend on route context.
+
+This insight may ultimately be more valuable than the original positive correlation observed in a single drill.
+
+Conclusion
+The initial relationship between CODE Score V3 and NFL career outcomes did not generalize across drills.
+
+Evidence from COMEBACK_ROUTE_RIGHT suggests that route context plays a critical role in determining the usefulness of tracking-derived metrics.
+
+At this stage, a route-specific evaluation framework appears more promising than the pursuit of a universal route-execution score.
+
+Status
+🟡 Validation In Progress
+
+The original hypothesis has not been confirmed.
+
+Further analysis across additional drills is required before drawing general conclusions about route-execution metrics and NFL success.
