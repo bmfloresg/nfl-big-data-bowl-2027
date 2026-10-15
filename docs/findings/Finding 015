@@ -1,0 +1,27 @@
+Finding 015
+Title
+Observed Route Speed Shows a Stronger Relationship with NFL Career Usage Than Athleticism Score
+
+Drill
+GO_ROUTE_RIGHT
+
+Results
+max_speed_mean ↔ career_games_started
+
+r = 0.313
+
+ngs_athleticism_score ↔ career_games_started
+
+r = 0.235
+
+max_speed_mean ↔ ngs_athleticism_score
+
+r = 0.321
+
+Interpretation
+Observed speed extracted from tracking data demonstrates a stronger relationship with NFL career usage than the composite Athleticism Score within this sample.
+
+The moderate relationship between max_speed_mean and Athleticism Score suggests that the two metrics capture overlapping but non-identical information.
+
+Status
+Promising
