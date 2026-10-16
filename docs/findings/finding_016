@@ -1,0 +1,83 @@
+# Finding 016
+
+## Title
+
+Agility Metrics Show Positive Relationship with NFL Career Usage
+
+---
+
+## Context
+
+Following the route-specific skill framework established in Milestone 03,
+SLANT_ROUTE_LEFT was selected as the primary drill for evaluating agility.
+
+The objective was to determine whether tracking-derived agility metrics
+show meaningful relationships with NFL career outcomes.
+
+---
+
+## Drill
+
+```text
+SLANT_ROUTE_LEFT
+```
+
+Sample:
+
+```text
+107 route attempts
+```
+
+---
+
+## Metrics Evaluated
+
+Tracking Metrics:
+
+- direction_change_mean
+- agility_index_mean
+
+Definitions:
+
+```text
+direction_change_mean
+
+Average cumulative directional change during route execution.
+```
+
+```text
+agility_index_mean
+
+direction_change / route_duration
+```
+
+Designed to capture directional change relative to route execution time.
+
+NFL Outcomes:
+
+- career_games_started
+- career_offensive_snaps
+
+---
+
+## Results
+
+### Agility Index
+
+```text
+agility_index_mean ↔ career_games_started
+
+r = 0.274
+```
+
+```text
+agility_index_mean ↔ career_offensive_snaps
+
+r = 0.328
+```
+
+---
+
+### Direction Change
+
+```text
