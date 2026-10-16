@@ -2,26 +2,97 @@ Finding 015
 Title
 Observed Route Speed Shows a Stronger Relationship with NFL Career Usage Than Athleticism Score
 
+Context
+Following the route-specific skill framework proposed in Milestone 03, GO_ROUTE_RIGHT was selected as the primary drill for evaluating straight-line speed.
+
+The objective was to determine whether tracking-derived speed metrics show meaningful relationships with NFL career outcomes.
+
 Drill
 GO_ROUTE_RIGHT
+Sample:
 
+104 route attempts
+Metrics Evaluated
+Tracking Metrics:
+
+burst_mean
+avg_acceleration_mean
+max_acceleration_mean
+max_speed_mean
+Traditional Metrics:
+
+NGS Athleticism Score
+Forty Yard Dash
+NFL Outcomes:
+
+career_games_started
+career_offensive_snaps
 Results
+Relationship with NFL Career Games Started
 max_speed_mean ↔ career_games_started
 
 r = 0.313
-
 ngs_athleticism_score ↔ career_games_started
 
 r = 0.235
+burst_mean ↔ career_games_started
 
+r = -0.023
+max_acceleration_mean ↔ career_games_started
+
+r = 0.270
+Relationship with Athleticism Score
 max_speed_mean ↔ ngs_athleticism_score
 
 r = 0.321
+Interpretation:
+
+Observed route speed and athleticism score appear related but are not measuring the same underlying characteristic.
+
+Additional Validation
+Speed Quintile Analysis
+Players were grouped into five quintiles according to:
+
+max_speed_mean
+Average NFL Games Started:
+
+Quintile	Avg Games Started
+Q0	2.85
+Q1	4.74
+Q2	5.05
+Q3	10.68
+Q4	10.20
+Average NFL Offensive Snaps:
+
+Quintile	Avg Offensive Snaps
+Q0	347
+Q1	326
+Q2	382
+Q3	841
+Q4	750
+Observation:
+
+Players in the upper speed quintiles accumulated substantially more career starts and offensive snaps than players in the lower speed quintiles.
 
 Interpretation
-Observed speed extracted from tracking data demonstrates a stronger relationship with NFL career usage than the composite Athleticism Score within this sample.
+Among all route-derived metrics evaluated so far, observed maximum speed demonstrated the strongest and most consistent relationship with NFL career usage.
 
-The moderate relationship between max_speed_mean and Athleticism Score suggests that the two metrics capture overlapping but non-identical information.
+The relationship appears stronger than that observed for the NGS Athleticism Score within this sample.
 
+While the observed correlations remain moderate, the quintile analysis provides additional evidence that directly measured route speed may be a meaningful indicator of future NFL participation.
+
+Limitations
+Analysis limited to GO_ROUTE_RIGHT.
+Sample size remains modest.
+NFL career outcomes are influenced by many factors beyond athletic ability.
+Correlation does not imply causation.
+Findings require validation on additional speed-oriented drills.
+Next Steps
+Replicate analysis on other route drills.
+Validate whether speed remains the strongest skill dimension.
+Compare speed metrics against draft capital.
+Evaluate whether observed route speed provides incremental value over traditional combine metrics.
 Status
-Promising
+🟢 Promising
+
+Observed maximum route speed currently represents the strongest tracking-derived signal identified during Milestone 03.
